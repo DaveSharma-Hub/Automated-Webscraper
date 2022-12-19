@@ -4,9 +4,6 @@ from bs4 import BeautifulSoup
 from flask_cors import CORS, cross_origin
 
 HEADERS = {
-    'User-Agent': ('Mozilla/5.0 (X11; Linux x86_64)'
-                    'AppleWebKit/537.36 (KHTML, like Gecko)'
-                    'Chrome/44.0.2403.157 Safari/537.36'),
     'Accept-Language': 'en-US, en;q=0.5'
 }
 
@@ -54,6 +51,6 @@ def getWebsite():
     return returnAllWebsiteData()
 
 if __name__ == '__main__':
-    print(getWebsiteData('https://www.npmjs.com/package/axios','span','class', '_76473bea f6 dib ph0 pv2 mb2-ns black-80 nowrap f5 fw4 lh-copy'))
+#     print(getWebsiteData('https://www.npmjs.com/package/axios','span','class', '_76473bea f6 dib ph0 pv2 mb2-ns black-80 nowrap f5 fw4 lh-copy'))
     app.run('0.0.0.0',port=5000)
 
